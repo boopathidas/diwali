@@ -1,0 +1,70 @@
+/* Body and General */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fireworks Canvas */
+#fireworks-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Glowing Text */
+.glow-text {
+    font-size: 2.5rem;
+    color: #ffd700;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+    }
+    to {
+        text-shadow: 0 0 20px #ffec8b, 0 0 30px #ffec8b, 0 0 40px #ffd700;
+    }
+}
+
+/* Diwali Image Animation */
+.diwali-img {
+    width: 300px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Course Cards */
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
